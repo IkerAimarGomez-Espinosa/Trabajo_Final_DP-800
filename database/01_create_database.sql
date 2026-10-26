@@ -12,7 +12,7 @@ ALTER DATABASE BoxScoutJunior SET COMPATIBILITY_LEVEL = 170;
 GO
 USE BoxScoutJunior;
 GO
-/*
+
 -- Necesario para CREATE VECTOR INDEX / VECTOR_SEARCH y, según versión, el
 fuzzy matching
 ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
@@ -22,4 +22,3 @@ N'BoxScoutJunior';
 SELECT name, value FROM sys.database_scoped_configurations WHERE name =
 N'PREVIEW_FEATURES';
 GO
-*/
